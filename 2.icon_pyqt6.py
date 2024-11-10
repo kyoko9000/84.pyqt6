@@ -5,7 +5,7 @@ from PyQt6.QtWidgets import QApplication, QGridLayout, QPushButton, QStyle, QWid
 class Window(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("PyQt5 Icons with Click Event")
+        self.setWindowTitle("PyQt6 Icons with Click Event")
         icons = sorted([attr for attr in dir(QStyle.StandardPixmap) if attr.startswith("SP_")])
         layout = QGridLayout()
         for n, name in enumerate(icons):
